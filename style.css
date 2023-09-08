@@ -285,6 +285,111 @@ body {
   font-size: 1.1rem;
 }
 /* ------ Operations section  ---------- */
-.section-header-1 {
-  font-size: 2.8rem !important;
+.slider {
+  width: 70rem;
+  height: 25rem;
+  margin: 0 auto;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.slide {
+  position: absolute;
+  width: 70%;
+}
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.testimonial-header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.testimonial-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+.testimonial-author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+.testimonial-photo {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+.testimonial-name {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+/* ------ Operations slider btn section  ---------- */
+.slider-btn {
+  width: 5rem;
+  height: 5rem;
+  font-size: 3rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+}
+.slider-btn-left {
+  position: absolute;
+  top: 40%;
+  left: 2rem;
+}
+.slider-btn-right {
+  position: absolute;
+  top: 40%;
+  right: 2rem;
+}
+/* ------ Claim  ---------- */
+.section-sign-up {
+  padding-top: 5rem;
+  color: white;
+  background-color: #37383d;
+  text-align: center;
+}
+.btn {
+  padding: 0.8rem;
+  background-color: var(--color-primary);
+  border-radius: 1.5rem;
+}
+/* ------ Footer  ---------- */
+.footer {
+  height: 10rem;
+  background-color: #37383d;
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  margin: 0 auto;
+}
+.footer-link {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.footer-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.footer-logo {
+  width: 3rem;
+  height: 3rem;
+  padding-bottom: 2rem;
+}
+.footer-copyright {
+  color: #b1b1b1;
+  font-size: 1.1rem;
 }
