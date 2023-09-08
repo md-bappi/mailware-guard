@@ -1,0 +1,208 @@
+:root {
+  --color-primary: #24cbc8;
+  --color-secondary: #ff768b;
+  --color-tertiary: #ff7a42;
+  --color-primary-darker: #139e9c;
+  --color-secondary-darker: #c94559;
+  --color-tertiary-darker: #d35e2c;
+  --color-primary-opacity: #24cbc856;
+  --color-secondary-opacity: #ff768b56;
+  --color-tertiary-opacity: #ff7b4256;
+  --gradient-primary: linear-gradient(to top left, #139e9c, #24cbc8);
+  --gradient-secondary: linear-gradient(to top left, #d35e2c, #ff7a42);
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(55, 56, 61);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  height: 10%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #444;
+  background-color: #f3f3f3;
+  overflow-x: hidden;
+}
+.header {
+  width: 88%;
+  margin: 0 auto;
+  height: 100vh;
+}
+/* ------ Navber ---------- */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9rem;
+  padding: 0 2rem;
+  animation: revealNav 1.5s 1;
+}
+@keyframes revealNav {
+  from {
+    transform: translateY(-10rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.nav img {
+  display: inline-block;
+  width: 3rem;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.nav-link {
+  font-size: 1.5rem;
+  color: inherit;
+  font-weight: 400;
+}
+.nav-link:hover {
+  color: var(--color-primary);
+}
+.nav-toggle {
+  display: none;
+}
+/* ------ Hero section ---------- */
+.header-title {
+  padding: 8rem 0;
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 2rem;
+}
+.header-left h1 {
+  font-size: 4rem;
+}
+.highlight {
+  position: relative;
+}
+.highlight::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  transform: scale(1.07, 1.05), skewX(-15deg);
+  background-color: var(--gradient-primary);
+}
+.header-left h4 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+.btn-text {
+  font-size: 1.7rem;
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-primary);
+}
+.header-img {
+  width: 100%;
+}
+/* ------ Hero section animation ---------- */
+.header-left {
+  animation: revealHeaderLeft 1.5s 1;
+}
+@keyframes revealHeaderLeft {
+  from {
+    transform: translateX(-20rem);
+    opacity: 0;
+  }
+  to {
+    transform: 0;
+    opacity: 1;
+  }
+}
+.header-right {
+  animation: revealHeaderRight 1.5s 1;
+}
+@keyframes revealHeaderRight {
+  from {
+    transform: translateX(20rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* ------ Features section ---------- */
+.section {
+  padding: 10rem 0;
+  border-top: 1px solid #d4d4d4;
+}
+.section-title {
+  width: 40%;
+  margin: 0 auto 4rem auto;
+}
+.section-description {
+  font-size: 1.6rem;
+}
+.section-header {
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 2rem 0;
+}
+/* ------ Features-feature section ---------- */
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.features img {
+  width: 100%;
+}
+.features-feature {
+  margin-left: 10rem;
+}
+.features-icon {
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--color-primary-opacity);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 2rem 0;
+}
+.features-icon svg {
+  width: 3rem;
+  height: 3rem;
+  fill: var(--color-primary);
+}
+.features-header {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.features-feature p {
+  font-size: 1.3rem;
+}
