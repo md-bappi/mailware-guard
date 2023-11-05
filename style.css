@@ -156,6 +156,17 @@ img {
   transition: all 0.3s;
 }
 
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo-name {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
 .nav__links {
   display: flex;
   align-items: center;
